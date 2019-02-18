@@ -1,0 +1,6 @@
+com\codingkata\bowling\service\BowlingGameService.class
+com\codingkata\bowling\controller\BowlingGameController.class
+com\codingkata\bowling\repository\BowlingGameRepository.class
+com\codingkata\bowling\model\BowlingGame.class
+com\codingkata\bowling\model\Frame.class
+com\codingkata\bowling\BowlingApplication.class
