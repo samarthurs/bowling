@@ -80,3 +80,24 @@ table.scorecard tr:nth-child(2) td:nth-child(even) {
 table.scorecard tr:nth-child(2) td:last-child {
     border-bottom: 1px solid;
 }
+
+.alert {
+    padding: 20px;
+    background-color: #f44336;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
