@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/styles.css}"/>
+</head>
+<body>
+<div id="bgImage" class="bgImage">
+    <!-- include image from static resources -->
+    <img th:src="@{/img/bowling.jpg}" width="200" height="200"/>
+    <img th:src="@{/img/bowling.jpg}" align="right" width="200" height="200"/>
+</div>
+<div layout:fragment="content" th:remove="tag">
+    <h1>Bowling Game</h1>
+    <ul>
+        <li>Go to the <a href="/bowlingGame/play" th:href="@{/bowlingGame/play}">Play Game</a></li>
+    </ul>
+</div>
+</body>
+</html>
