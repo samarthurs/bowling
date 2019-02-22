@@ -9,9 +9,9 @@ public class Frame {
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long frameId;
 
-    private int pinsKnockedDownOnFirstRoll;
+    private int pinsDownFirstRoll;
 
-    private int pinsKnockedDownOnSecondRoll;
+    private int pinsDownSecondRoll;
 
     private int frameScore;
 
@@ -21,6 +21,12 @@ public class Frame {
 
     private boolean frameComplete;
 
+    private boolean spareHandled;
+
+    private boolean strikeFristRollHandled;
+
+    private boolean strikeSecondRollHandled;
+
     public Long getFrameId() {
         return frameId;
     }
@@ -29,20 +35,20 @@ public class Frame {
         this.frameId = frameId;
     }
 
-    public int getPinsKnockedDownOnFirstRoll() {
-        return pinsKnockedDownOnFirstRoll;
+    public int getPinsDownFirstRoll() {
+        return pinsDownFirstRoll;
     }
 
-    public void setPinsKnockedDownOnFirstRoll(int pinsKnockedDownOnFirstRoll) {
-        this.pinsKnockedDownOnFirstRoll = pinsKnockedDownOnFirstRoll;
+    public void setPinsDownFirstRoll(int pinsDownFirstRoll) {
+        this.pinsDownFirstRoll = pinsDownFirstRoll;
     }
 
-    public int getPinsKnockedDownOnSecondRoll() {
-        return pinsKnockedDownOnSecondRoll;
+    public int getPinsDownSecondRoll() {
+        return pinsDownSecondRoll;
     }
 
-    public void setPinsKnockedDownOnSecondRoll(int pinsKnockedDownOnSecondRoll) {
-        this.pinsKnockedDownOnSecondRoll = pinsKnockedDownOnSecondRoll;
+    public void setPinsDownSecondRoll(int pinsDownSecondRoll) {
+        this.pinsDownSecondRoll = pinsDownSecondRoll;
     }
 
     public int getFrameScore() {
@@ -75,5 +81,29 @@ public class Frame {
 
     public void setFrameComplete(boolean frameComplete) {
         this.frameComplete = frameComplete;
+    }
+
+    public boolean isSpareHandled() {
+        return spareHandled;
+    }
+
+    public void setSpareHandled(boolean spareHandled) {
+        this.spareHandled = spareHandled;
+    }
+
+    public boolean isStrikeFristRollHandled() {
+        return strikeFristRollHandled;
+    }
+
+    public void setStrikeFristRollHandled(boolean strikeFristRollHandled) {
+        this.strikeFristRollHandled = strikeFristRollHandled;
+    }
+
+    public boolean isStrikeSecondRollHandled() {
+        return strikeSecondRollHandled;
+    }
+
+    public void setStrikeSecondRollHandled(boolean strikeSecondRollHandled) {
+        this.strikeSecondRollHandled = strikeSecondRollHandled;
     }
 }
